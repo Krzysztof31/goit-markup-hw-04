@@ -543,3 +543,23 @@ img {
 .portfolio-button-list:first-child {
     background-color: var()
 }
+.section-five{
+
+}
+
+    
+
+.email-number{ 
+    position: relative;
+    color:var(--fifth-colour);
+    transition:cubic-bezier(0.4,0,0.2,1);
+}
+.email-number::after{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--fifth-colour);
+    border-radius: 2px;
+
+}
