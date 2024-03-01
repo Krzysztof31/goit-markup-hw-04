@@ -120,7 +120,10 @@ span{
 
 .header-section{
     border-bottom: 1px solid var(--cornflower);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    
 }
 .header-elements{
     display: flex;
@@ -141,6 +144,11 @@ span{
 .address-list:last-child{
     margin-right: 0%;
 }
+.studio-link{
+    position: relative;
+    color: var(--ocean);
+
+}
 
 
 
@@ -148,12 +156,15 @@ span{
 
 
 .hero{
-    background-image:url('../images/hero-background.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
     max-width: 1440px;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: cover;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin:0 auto;
+    background-position: center;
+
+
 
     
 }
@@ -259,6 +270,16 @@ span{
         width: calc((100% - 72px)/4);
         
 }
+.values-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--cloud);
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+}
 
 /* section team */
 
@@ -316,7 +337,10 @@ font-size: 16px;
 .team-title-poistion{
     padding: 32px 0px;
 }
+
 .icon-list{
+
+
 }
 
 
@@ -379,41 +403,51 @@ font-size: 16px;
     border-top: none;
    
 }
-.box {
+.portfolio-overlay {
     position: relative;
     overflow: hidden;
-    width: 360px;
-    height: 300px;
-    margin: 0 auto;
+    
 }
 
-.overlay {
+.portfolio-overlay-text {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color:var(--iris);
+   font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 32px 40px 32px; 
     transform: translatey(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.box:hover .overlay
-{
+
+.portfolio-overlay:hover .portfolio-overlay-text {
+    
     transform: translatey(0);
+
+
 }
-.hidden-akapit{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 32px 40px 32px;
+.portfolio-info{
+    
+
+
 }
+
+   
     
 /* foter */
 
 .footer{
     background-color:var(--navy-blue);
     padding: 100px 0px 100px;
+    
 }
+.footer-elements{
+    display: flex;
+    align-items: baseline;}
 .text-footer{
     color: var(--cloud);
     line-height: 1.5;
@@ -426,4 +460,21 @@ font-size: 16px;
 .foter-link-position{
     display: inline-block;
     margin-bottom: 16px;
+}
+.logo-p{
+    margin-right: 120px;
+}
+.footer-social-media{
+    font-weight: 500;
+    font-size: 16px;
+    list-style: 1.5;
+    letter-spacing: 0.002em;
+    color: var(--white);
+    margin-bottom: 16px;
+
+
+}
+.social-media-footer-list{
+    display: flex;
+    gap: 16px;
 }
