@@ -363,7 +363,12 @@ background-color: var(--iris);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.team-icon-bg:hover,
+.team-icon-bg:focus{
+    background-color: var(--ocean);
 }
 .team-icon-element{
     width: 40px;
@@ -399,6 +404,7 @@ background-color: var(--iris);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+    padding: 40px 32px;
     
 }
 .portfolio-position{
@@ -526,10 +532,30 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     
 
 }
+.footer-icon-bg:hover,
+.footer-icon-bg:focus{
+    background-color: var(--ocean);
+}
+.footer-icon-bg:hover,
+.footer-icon-bg:focus {
+    background-color: var(--green);
+}
+
 .list-icon-element{
     width: 40px;
     height: 40px;
 }
+
+        /* content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px; */
